@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap");
+
+body {
+	background: linear-gradient(to left, #ff85b4 50%, #000 50%, #000 100%);
+	font-family:Roboto Slab;
+}
+
+div {
+	font-family:Roboto Slab;
+	background: black;
+	border-radius: 10px;
+	width: 80%;
+	position: absolute;
+	height: 110%;
+	margin-left: 120px;
+	margin-top: 20px;
+	border-style: solid;
+	border-color: #d8dc08;
+	border-width: 2px;
+	animation: bg 7s linear infinite;
+}
+
+@keyframes bg {
+	0% {
+		background: rgb(8, 5, 173);
+	}
+	50% {
+		background: #ef0707;
+	}
+	100% {
+		background: rgb(8, 5, 173);
+	}
+}
+
+h1 {
+	text-shadow: 0 0 5px rgb(25, 2, 2);
+	font-size: 21px;
+	color: #e1e3d3;
+	margin-left: 10px;
+}
+
+img {
+	width: 25%;
+	position: absolute;
+	top: 30%;
+	left: 78%;
+	transform: translate(-50%, -50%);
+	border-radius: 30px;
+	box-shadow: 0 0 5px #530caf, 0 0 25px #9a7ac9, 0 0 50px #d4178c,
+		0 0 100px #941c66, 0 0 170px #04051d;
+}
+
+h3 {
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+/* #zizoo {
+	margin-left: 65%;
+	margin-top: -10%;
+} */
+
+.balloon {
+	display: inline-block;
+	width: 120px;
+	height: 145px;
+	background: hsl(215, 50%, 65%);
+	border-radius: 80%;
+	position: relative;
+	box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+	margin: 20px 30px;
+	transition: transform 0.5s ease;
+	z-index: 10;
+	animation: balloons 4s ease-in-out infinite;
+	transform-origin: bottom center;
+}
+
+@keyframes balloons {
+	0%,
+	100% {
+		transform: translateY(0) rotate(-4deg);
+	}
+	50% {
+		transform: translateY(-25px) rotate(4deg);
+	}
+}
+
+.balloon:before {
+	content: "▲";
+	font-size: 20px;
+	color: hsl(215, 30%, 50%);
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: -12px;
+	z-index: -100;
+}
+
+.balloon:after {
+	display: inline-block;
+	top: 153px;
+	position: absolute;
+	height: 250px;
+	width: 1px;
+	margin: 0 auto;
+	content: "";
+	background: whitesmoke;
+}
+
+.balloon:nth-child(2) {
+	background: hsl(245, 40%, 65%);
+	animation-duration: 3.5s;
+}
+.balloon:nth-child(2):before {
+	color: hsl(245, 40%, 65%);
+}
+
+.balloon:nth-child(3) {
+	background: hsl(139, 50%, 60%);
+	animation-duration: 3s;
+}
+.balloon:nth-child(3):before {
+	color: hsl(139, 30%, 50%);
+}
+
+.balloon:nth-child(4) {
+	background: hsl(59, 50%, 58%);
+	animation-duration: 4.5s;
+}
+.balloon:nth-child(4):before {
+	color: hsl(59, 30%, 52%);
+}
+
+.balloon:nth-child(5) {
+	background: hsl(23, 55%, 57%);
+	animation-duration: 5s;
+}
+.balloon:nth-child(5):before {
+	color: hsl(23, 44%, 46%);
+}
+
+
+#byme {
+	color: pink;
+}
